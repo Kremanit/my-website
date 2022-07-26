@@ -123,7 +123,7 @@
 
                     <div class="animated fadeInUp">
 
-                        <pre><pre align="middle"><a href="https://steamcommunity.com/id/kremanit" "="" target="_blank">STEAM /</a> <a href="https://t.me/kremanit" target="_blank">Telegram /</a> <a href="https://vk.com/kremabit" target="_blank">VK</a></pre></pre>
+                        <pre><pre align="middle"><a href="https://steamcommunity.com/id/kremanit" "="" target="_blank">steam /</a> <a href="https://t.me/kremanit" target="_blank">telegram /</a> <a href="https://vk.com/kremabit" target="_blank">vk</a></pre></pre>
                         <center>
                             <div id="clockDisplay" class="clockStyle">09:44:37 PM</div>
                         </center>
@@ -715,85 +715,6 @@
             myClock.innerText = h + ":" + m + ":" + s + " " + diem;
         }
         renderTime();
-    </script>
-
-    </script>
-    <script type='text/javascript'>
-        function kill_ctrl_key_combo(e) {
-            var forbiddenKeys = new Array('a', 'c', 'x', 's', 'u');
-            var key;
-            var isCtrl;
-            if (window.event) {
-                key = window.event.keyCode;
-                if (window.event.ctrlKey) isCtrl = true;
-                else isCtrl = false;
-            } else {
-                key = e.which;
-                if (e.ctrlKey) isCtrl = true;
-                else isCtrl = false;
-            }
-            //if ctrl is pressed check if other key is in forbidenKeys array
-            if (isCtrl) {
-                for (i = 0; i < forbiddenKeys.length; i++) { //case-insensitive comparation
-                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                        window.open("https://vk.com/draining_sites", "_self");
-                        return false;
-                    }
-                }
-            }
-            return true;
-        }
-
-        function disable_selection(target) {
-            if (typeof target.style.MozUserSelect != "undefined") {
-                target.style.MozUserSelect = "none";
-            }
-            target.style.cursor = "default";
-        }
-
-        function enable_protection() {
-            disable_selection(document.body); //These will disable selection on the page
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown = double_mouse; //These will disable double mouse on the page
-            document.oncontextmenu = function() {
-                return false;
-            }; //These will disable right click on the page
-            document.onkeydown = kill_ctrl_key_combo;
-        }
-
-        window.onload = function() { //These will enable protection on the page
-            enable_protection();
-        };
-    </script>
-
-    <script>
-        /*function check(e)
-            {
-            alert(e.keyCode);
-            }*/
-        document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly.
-                window.open("https://vk.com/draining_sites", "_self");
-            }
-            return false;
-        };
-    </script>
-    <script>
-        $(document).keydown(function(event) {
-            if (event.keyCode == 123) {
-                window.open("https://vk.com/draining_sites", "_self");
-                return false;
-
-            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                window.open("https://vk.com/draining_sites", "_self");
-                return false;
-
-            }
-        });
-
-        $(document).on("contextmenu", function(e) {
-            e.preventDefault();
-        });
     </script>
     <script type="text/javascript">
         document.ondragstart = noselect;
